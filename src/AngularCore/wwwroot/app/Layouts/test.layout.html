@@ -1,0 +1,24 @@
+﻿<h1>This is {{Name}} Component</h1>
+                 <div>Hello my name is {{Name}}.
+                  <button (click)="sayMyName()">Say my name</button>
+                </div>
+
+<h2>Calling from Service</h2>
+<ul>
+    <li *ngFor="let product of Products; let index = index">{{ product.ProductName }} - {{ product.ProductPrice }}</li>
+   </ul>
+
+<h2>Calling from Values API</h2>
+<ul>
+    <li *ngFor="let value of apiValues; let index = index">{{ value }}</li>
+   </ul>
+  <br/>
+<div>
+   <input [value] = "name" (input) = "name = $event.target.value">
+   {{name}}
+</div>
+ <br/>
+<div> 
+   {{Status}} 
+   <button (click) = "clicked()">Click</button> 
+</div> 
